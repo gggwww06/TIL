@@ -10,22 +10,13 @@
 
 <body>
   <script>
-    function arrow1 (name) {
-      return `hello, ${name}`
+    const user = {
+      name: 'Alice',
+      greeting: function () {
+        return 'hello'
+      }
     }
-    
-    const arrow2 = function (name) {
-      return `hello, ${name}`
-    }
-    
-    const greet1 = arrow1
-    const greet2 = arrow2
-
-    console.log(greet1)
-    console.log(greet2)
-
-    console.log(greet1('aaa'))
-    console.log(greet2('bbb'))
+    console.log('Alice' in user)
   </script>
 </body>
 
